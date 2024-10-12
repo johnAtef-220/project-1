@@ -1,0 +1,1454 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2, h3, h4 , h5 ,p ,h6{
+    text-transform: capitalize;
+}
+/* -------------------header-------------------------------------------- */
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(34, 34, 34, 0.708);
+    padding: 5px;
+    position: fixed;
+    z-index: 990;
+}
+img{
+    margin-left: 60px ;
+    display: inline-block;
+}
+ul{
+    margin-right: 200px;
+    float: right;
+}
+ul li{
+    height: 58px;
+    display: inline-block;
+    float: left;
+    margin-left: 35px;
+    padding: 10px;
+    
+}
+ul li a{
+    color: azure;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+ul li:hover {
+    background-color:  rgba(255, 255, 255, 0.124);
+    border-bottom:  solid red 5px;
+    transition: 1s;
+}
+/* -------------------------hidden dashboard---------------------------- */
+.dashbourd{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.708);
+    padding: 20px;
+    opacity: 0;
+    position: fixed;
+    top: 60px;
+    z-index: 990;
+}
+
+.dashbourd p ,.dashbourd i{
+    color: white;
+    float: left;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dashbourd p{
+    margin-top: 5px;
+}
+
+.dashbourd i {
+    font-size: 30px;
+}
+
+.dashbourd .menu{
+    margin:0px 80px;
+}
+
+.dashbourd:hover{
+    opacity: 1;
+    transition: 1.3s;
+}
+
+.dashbourd input{
+    border: 0px;
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    opacity: 1;
+    padding: 10px;
+    margin-left: 250px ;
+    
+}
+
+.dashbourd input:hover{
+    opacity: 0.7;
+    
+}
+
+.dashbourd input:focus{
+    outline: 0px;
+}
+ 
+
+/* section 1------------------------------------------------ */
+.interface{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/whats-university-like-accepted-students.jpg);
+    background-size: cover;
+    position: relative;
+}
+.interface .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.601);
+    position: absolute;
+    
+}
+
+.content {
+    width: 70%;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    text-align: center;
+    color: aliceblue;
+    
+}
+.content span{
+    color:rgb(98, 192, 255);
+    font-weight: 700px;
+}
+.content h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    word-spacing: 10px ;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.content p{
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 10px ;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.interface button{
+    height: 50px;
+    width: 160px;
+    margin: 30px 10px ;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 1;
+}
+.btn2{
+    background-color: rgb(0, 78, 123);
+    color: white;
+}
+
+button:hover{
+    opacity: 0.8 ;
+}
+/* ----------------------------section 2------------------------------------ */
+.service{
+    margin: 100px auto 50px;
+    text-align: center;
+    position: relative;
+    font-size: 21px;
+}
+.service h2{
+    color: rgb(0, 78, 123);
+}
+
+.underline{
+    position: absolute;
+    top: 40px;
+    left: 42.5%;
+    background-color:  rgb(0, 78, 123);
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.cards{
+    margin:50px auto;
+    height: 300px;
+    width: 88%;
+    background-color: rgb(121, 121, 121);
+    border-left: solid aqua 5px;
+    border-right: solid aqua 5px;
+    position: relative;
+}
+
+.cards::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 255, 255, 0.222);
+    transition: 2s;
+}
+
+.cards:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+.cards::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 255, 255, 0.261);
+    transition: 2s;
+}
+
+.cards:hover:before{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+
+.card1,.card2 , .card3{
+    height: 230px;
+    width: 30%;
+    float: left;
+    margin-top: 30px;
+    position: relative;
+}
+
+.card1 {
+position: absolute;
+top: 0;
+left: 3%;
+float: left;
+z-index: 20;
+background-image: url(../images/Digital\ Marketing\ Trends\ in\ 2023.webp);
+background-size: cover;
+}
+.card2 {
+position: absolute;
+top: 0;
+left:35%;
+float: left;
+z-index: 20;
+background-image: url(../images/coding.jpg);
+background-size: cover;
+
+}
+.card3 {
+position: absolute;
+top: 0;
+right: 3%;
+float: left;
+z-index: 20;
+background-image: url(../images/poster.jpg);
+background-size: cover;
+}
+
+.card1::after , .card2::after ,.card3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.758);
+    transition: 2s;
+    
+}
+
+.card1:hover:after ,.card2:hover:after ,.card3:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+.card-content{
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    position: absolute;
+    top: 10;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-transform: capitalize;
+}
+.card-content h3{
+    line-height: 40px;
+}
+.card-content p{
+
+    font-size: 17px;
+    width: 280px;
+    margin:15px auto 30px;
+}
+ a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.number1 ,.number2 ,.number3{
+font-size: 17px;
+background-color: aliceblue;
+height: 20px;
+width: 21px;
+border-radius: 50%;
+}
+.number1{
+    
+    position: absolute;
+    bottom: 2%;
+    left: 17%;
+    z-index: 30;
+} 
+.number2{
+    
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    z-index: 30;
+} 
+.number3{
+    
+    position: absolute;
+    bottom: 2%;
+    right: 17%;
+    z-index: 30;
+} 
+/* ---------------------------section 3------------------------------ */
+.courses{
+    margin: 100px auto 50px;
+    text-align: center;
+    position: relative;
+    font-size: 21px;
+}
+.courses h2{
+    color: rgb(0, 78, 123);
+    position: relative;
+}
+
+.underline2{
+    position: absolute;
+    top: 40px;
+    left: 42.5%;
+    background-color:  rgb(0, 78, 123);
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.courses-card{
+    width: 90%;
+    margin:50px auto 0px;
+}
+
+.course1 ,.course2 ,.course3 , .course4 , .course5 , .course6 {
+    float: left;
+    height: 300px;
+    width: 30%;
+    margin-top: 10px;
+    position: relative;
+}
+.course1{
+background-image: url(../images/339-illustrator-video-training.jpg);
+background-size: cover;
+}
+.course2{
+background-image: url(../images/68747470733a2f2f7777772e63726561746976656974696e737469747574652e636f6d2f696d616765732f636f757273652f636f757273655f313636333035323035362e6a7067.jpeg);
+background-size: cover;
+}
+.course3{
+background-image: url(../images/7_digital_skills600x387.png);
+background-size: cover;
+
+}
+.course4{
+background-image: url(../images/adobe-indesign-Screenshot_1-10-768x412.avif);
+background-size: cover;
+}
+.course5{
+background-image: url(../images/AI-Artificial-Intelligence-What-it-is-and-why-it-matters-qb1o8gpaeu2d4z5h27m45d99w1tmlkjwinh4wq1izi.jpg);
+background-size: cover;
+}
+.course6{
+background-image: url(../images/AfterEffects.webp);
+background-size: cover;
+}
+
+
+
+.clear {
+    clear: both;
+}
+.center-course{
+    margin-left:  5% ;
+    margin-right:  5% ;
+}
+
+.fa-heart{
+    color: rgb(196, 196, 196);
+    background-color: azure;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 20;
+    position: absolute;
+    top: 3%;
+    left:5%;
+    z-index: 22;
+}
+
+.fa-heart:hover{
+    color: red;
+   transition: 0.7s;
+}
+
+.discount{
+    background-color: red;
+    width: 40px;
+    border-radius: 50% ;
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    opacity: 1;
+    z-index: 20;
+}
+.hotest{
+    background-color: green;
+    width: 40px;
+    border-radius: 50% ;
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    opacity: 1;
+    z-index: 20;
+}
+
+
+
+.cover2{
+    background-color: rgba(0, 0, 0, 0.44);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 22;
+}
+.cover2:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.cover2:hover ~ .discount{
+    z-index: 30;
+    transition: 7s;
+}
+.cover2:hover ~ .hotest{
+    z-index: 30;
+    transition: 7s;
+}
+
+
+
+
+.content-cover{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.content-cover h4{
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.768);
+    width: 200px;
+    border-radius: 20%;
+    margin: auto;
+}
+.content-cover p{
+    font-size: 17px;
+    margin: 10px auto;
+}
+
+.content-cover i{
+    margin: auto ;
+    font-size: 24px;
+    
+}
+
+.feuters{
+    margin: 100px auto 50px;
+    text-align: center;
+    position: relative;
+    font-size: 21px;
+}
+.feuters h2{
+    color: rgb(0, 78, 123);
+    position: relative;
+}
+.underline3{
+    position: absolute;
+    top: 40px;
+    left: 42.5%;
+    background-color:  rgb(0, 78, 123);
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+
+.cards-feuters{
+    margin:50px auto;
+    width: 80%;
+}
+.card-feuter {
+    width: 30%;
+    float: left;
+    height: 130px;
+    background-color: rgb(213, 209, 209);
+    margin-top: 10px;
+    position: relative;
+    border-top: 3px solid #02bcea;
+}
+
+.card-feuter::after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    transition: 1s;
+}
+.card-feuter:hover:after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #02bcea;
+    transition: 1s;
+    color: white;
+}
+
+
+.center-feuter {
+    margin-left:  5%;
+    margin-right: 5%;
+}
+
+.card-feuter:hover > p ,.card-feuter:hover > h3 , .card-feuter:hover > i {
+    color: white;
+    transition: 0.4s;
+}
+
+.card-feuter i , .card-feuter h3 , .card-feuter p {
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+
+.card-feuter i{
+top: 10%;
+left: 5%;
+font-size: 30px;
+}
+
+.card-feuter h3 {
+    top: 13%;
+    left: 20%;
+    font-size: 25px;
+}
+.card-feuter p {
+    top: 40%;
+    left: 12%;
+    font-size: 16px;
+    width: 250px;
+}
+  /* ------------------------section 4-------------------------------------- */
+.about-us{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 21px;
+    background-color: rgb(227, 227, 218);
+    height: 500px;
+    margin-top: 100px;
+}
+
+.underline4{
+    position: absolute;
+    top: 55px;
+    left: 10%;
+    background-color:  rgb(0, 78, 123);
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+    
+}
+.about-content{
+    margin: 100px 0px 0px 130px; 
+    float: left;
+    position: relative;
+}
+.about-content h2{
+    
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 40px;
+    margin-right: 160px;
+    font-size: 40px;
+}
+
+.about-content > p{
+    
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight:900;
+    float: left;
+    margin: 50px 10px;
+}
+.about-content span{
+    color: #02bcea;
+    margin-left: 3px;
+}
+
+.list-content{
+    float: left;
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+.list-content p{
+    font-weight: 900;
+    color: #6c6c6c;
+}
+.lists{
+    position: relative;
+    margin-top: 10px;
+    height: 300px;
+}
+.list-one {
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+
+.list-two{
+    position: absolute;
+    top: 26%;
+    left: 0;
+}
+.list-three{
+    position: absolute;
+    top: 36%;
+    left: 0;
+}
+.list-four{
+    position: absolute;
+    top: 46%;
+    left: 0;
+}
+.list-content i{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.list-content p{
+    float: right;
+    margin: 30px 10px 0px;
+    font-size: 17px;
+}
+
+.lists i{
+    color: green;
+}
+/* --------------------section 5------------------------ */
+.slideshow{
+    float: right;
+    margin: 100px 130px 0px 0px;
+    width: 300px ;
+    height: 320px;
+}
+.img-slide{
+    width: 300px ;
+    height: 300px;
+    background-image: url(../images/SEND-hero.png);
+    background-size: cover;
+    border-radius: 50% ;
+    outline: 5px solid #004c79;
+}
+
+.btn-slide{
+    margin: 14px 96px 0px 115px;
+}
+
+.btn-slide1 , .btn-slide2 , .btn-slide3 {
+    height: 10px;
+    width: 10px;
+    margin-right: 15px;
+    float: right;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-slide1 ,.btn-slide2{
+ background-color: #a5abac;
+}
+
+ .btn-slide3 {
+    background-color: #02bcea;
+}
+
+/* ---------------------arrow----------------------------------------------- */
+
+.line{
+    height: 50px;
+    width: 120px;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    z-index: 1001;
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.line-title{
+    border-radius: 10px 0px 0px 10px ;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    z-index: 1000;
+    height: 150px;
+    width: 250px;
+}
+.line-title-pos{
+    height: 150px;
+    width: 250px;
+    position: relative;
+    bottom:35%;
+    right: 0%;
+    z-index: 2000;
+    opacity: 0.7;
+    transition: 2s;
+}
+
+.line-title-pos::after {
+    content: "";
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #004c79;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0%;
+    right: 0%;
+    transition: 1s;
+}
+
+.line-title-pos:hover:after {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+   
+}
+
+
+.visit{
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    top:42%;
+    right: 10%;
+    z-index: 2000;
+    opacity: 0;
+    margin: 40px -70px 0px 0px;
+}
+.visit p , .fa-star{
+   color: #fff;
+   line-height: 30px;
+   float: left;
+}
+
+
+
+.line-title:hover ~ .visit {
+    opacity: 1;
+    transition: 2s
+}
+
+
+
+.line-title p{
+    color: #fff;
+    font-size: 18;
+    
+}
+
+
+.line-title p{
+    margin: 70px 20px 0px 40px;
+    font-size: 20px;
+}
+.line-title i ,.line-title p{
+    float: left;
+}
+
+/* ------------------------------------section 6------------------------------------ */
+.details-section{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    background-image:url(../images/details.jpg) ;
+    background-size: cover;
+   
+}
+
+.details{
+    float: left;
+    margin-left: 50px ;
+   
+}
+
+.details .like ,.details .cash ,.details .eye ,.details  .ranking {
+font-size: 25px;
+float: left;
+color: #fff;
+margin:150px 80px 0px 130px;
+text-align: center;
+line-height: 35px;
+
+}
+
+/* --------------------------section 7----------------------- */
+.subscrip{
+    margin-top: 100px;
+    height:100vh;
+    width:100%;
+}
+
+.subscrip > h1{
+    margin: 10px;
+    color: #004c79;
+    text-align: center;
+    position: relative;
+}
+
+.subscrip > h1:after{
+    content: "";
+    background-color: #004c79;
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 548px;
+    
+}
+
+.sub-1 , .sub-2 , .sub-3{
+    background-image: url(../images/details.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+    height: 400px;
+    margin-top: 70px;
+    height: 380px;
+    width: 384px;
+    float: left;
+    position: relative;
+    z-index: 100;
+    
+}
+.sub-1::after , .sub-2::after , .sub-3::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.733);;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sub-1:hover:after , .sub-2:hover:after , .sub-3:hover:after{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.sub-cards{
+position: relative;
+text-align: center;
+
+}
+
+.sub-1, .sub-2 , .sub-3{
+    border-bottom: 5px solid #01436a;
+}
+
+
+.sub-free{
+    margin-left: 30px;
+    text-align: center;
+    color: azure;
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 34%;
+    z-index: 200;
+}
+.pro{
+    
+    text-align: center;
+    color: azure;
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 37%;
+    z-index: 200;
+}
+
+
+.sub-cards .p-1, .sub-cards .p-2,.sub-cards .p-3 ,.sub-cards h5 , .sub-cards h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 3px 0px;
+    font-size: 16px;
+}
+.sub-cards .p-1{
+    position: absolute;
+    top: 47%;
+    left: 33%;
+    margin-top: 30px;
+    z-index: 200;
+    text-align: center;
+}
+.sub-cards .p-2{
+    position: absolute;
+    top: 54%;
+    left: 32%;
+    margin-top: 30px;
+    z-index: 200;
+}
+.sub-cards .p-3{
+    position: absolute;
+    top: 62%;
+    left: 35%;
+    margin-top: 30px;
+    z-index: 200;
+}
+
+
+
+.circle-1, .circle-2 , .circle-3{
+    position: absolute;
+    top: 20%;
+    left: 129px;
+    outline: 2px solid white;
+    border-radius: 500px;
+    width: 115px;
+    height: 115px;
+    z-index: 100;
+}
+.sub-cards h1{
+text-align: center;
+font-size: 40px;
+font-weight: 500px;
+margin: 6px;
+}
+.sub-cards h5{
+    text-align: center;
+    font-size: 22px;
+}
+
+.sub-title{
+    margin: 150px 0px 10px;
+}
+
+.sub-cards .sub-btn{
+    background-color: rgba(251, 32, 255, 0.486);
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    color: azure;
+    position: absolute;
+    left: 131px;
+    border: 0px;
+    margin-top: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 200;
+}
+
+.sub-cards .sub-btn:hover{ 
+    background-color: rgb(251, 32, 255);
+}
+
+/* -------------------------section 8------------------------ */
+
+
+.lecturers{
+    
+    height: 400px;
+    width: 100%;
+    background-image:url(../images/details.jpg) ;
+    background-size: cover;
+    
+}
+.lecturers-m{
+    margin:30px 0px 0px 180px;
+    position: absolute;
+}
+ .lecturer-1 ,.lecturer-2{
+    margin: 100px 30px 0px ;
+    width: 410px;
+    height: 200px;
+    float: left;
+   
+ }
+.img-box-1 , .img-box-2 {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-right: 30px ;
+    border-radius: 50%;
+}
+
+.img-box-1{
+    background-image: url(../images/7_digital_skills600x387.png);
+    background-size: cover;
+}
+.img-box-2{
+    background-image: url(../images/coding.jpg);
+    background-size: cover;
+}
+
+.box-lecturer{
+    margin-top: 25px;
+    float: left;
+    display: inline-block;
+}
+
+.box-lecturer h4{
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.box-lecturer p{
+    font-weight: 900;
+    color: aqua;
+}
+
+.lecturers .paragrph {
+    float: left;
+    width: 280px ;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    margin: 5px 0px 0px 105px;
+    text-align: start;
+}
+
+.lecturers .paragrph p{
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.cover-lec{
+    width: inherit;
+    height: inherit;
+    background-color: #000000a5;
+}
+/* -------------------------section 10------------- */
+.tutorial{
+    margin: 100px 0px 50px;
+    width: 100%;
+    height: 575px;
+    background-color: #ccd0d1;
+    padding: 50px;
+    position: relative;
+}
+
+ h2{
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(0, 78, 123);
+    font-size: 36px;
+    margin-top: 16px;
+}
+
+ .underline5{
+    position: absolute;
+    top: 20%;
+    left: 42.5%;
+    background-color:  rgb(0, 78, 123);
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.tutorial-cards{
+    width: 90%;
+    height: 290px;
+    margin:80px auto;
+    text-align: center;
+}
+.tutorial-card{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #535353;
+    border-radius: 10px;
+    position: relative;
+}
+ 
+.middle{
+    margin:0px 5%;
+}
+
+.tutorial-image{
+    width: 90%;
+    margin:15px auto 5px;
+    position: relative;
+    z-index: 100;
+}
+
+.tutorial-image img{
+    width: 100%;
+    margin: 0px;
+    display: block;
+}
+
+.tutorial-cover{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0;
+    right: 0%;
+    z-index: 100;
+    background-color: #ffffff36;
+    opacity: 0;
+    transition: 1s;
+}
+
+.tutorial-card:hover .tutorial-cover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.tutorial-cover a{
+    display: block;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    line-height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    margin-top: 5px;
+    z-index: 100;
+}
+
+.tutorial-cover a i{
+    line-height: 40px;
+}
+
+.tutorial-card h3{
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.tutorial-card p{
+    color: aqua;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    font-weight: 500;
+}
+
+.tutorial-card::after{
+content: "";
+position: absolute;
+top:0;
+left: 0;
+height: 0%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.625);
+transition: 1s;
+}
+
+.tutorial-card:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+
+.tutorial-card::before{
+content: "";
+position: absolute;
+top:100%;
+left: 0;
+height: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.625);
+transition: 1s;
+}
+
+.tutorial-card:hover::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.tutorial-card:hover > h3{
+color: blue;
+}
+
+/* ------------------------------section 11------------------------------------------- */
+.distintive{
+    margin: 50px auto 0px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    font-size: 21px;
+    position: relative;
+
+}
+.distintive h2{
+    color: rgb(0, 78, 123);
+}
+
+.underline6{
+    position: absolute;
+    top: 8%;
+    left: 42.5%;
+    background-color:  rgb(0, 78, 123);
+    width: 200px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.distintive-cards{
+    width: 90%;
+    margin: 70px auto 0px;
+    background-color: #02bcea;
+}
+.distintive-card{
+    width: 30%;
+    height: 480px;
+    border-top: 4px solid #004c79;
+    float: left;
+    position: relative;
+    padding: 15px;
+}
+.dis{
+    margin: 0px 5% ;
+}
+
+.distintive-img{
+    width: 195px; 
+    height: 195px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+.distintive-img img{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+}
+.distintive-discreption{
+    font-size: 13px;
+    float: left;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+.distintive-discreption p , .distintive-discreption i{
+    float: left;
+    display: inline-block;
+    margin-left: 3px;
+  
+}
+
+.distintive-discreption p{
+    margin-right: 10px;
+}
+
+.distintive-discreption span{
+    margin-left: 13px;
+}
+.distintive-discreption i{
+    font-size: 18px;
+    margin:0px 5px;
+}
+
+.distintive-title p{
+    font-size: 15px;
+    float: left;
+    text-align: left;
+    font-weight: 800;
+    color: #6c6c6c;
+}
+
+.distintive-card::after{
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #02bcea84;
+    position: absolute;
+    transition: 1s;
+}
+
+.distintive-card:hover::after{
+    height: 100%;
+    width: 100%;    
+    transition: 1s;
+}
+
+.distintive-card h6{
+    float: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.distintive-card a{
+    color: #004c79;
+    margin-top: 10px;
+    float: left;
+    position: absolute;
+    bottom: 0%;
+    left: 15px;
+    z-index: 100;
+}
+
+.distintive-card a:active{
+color: red;
+}
+
+/* --------------------------------footer------------------------------- */
+
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 360px;
+    background-color: rgb(34, 34, 34);;
+    padding: 50px;
+}
+
+.footer-img{
+  margin: 40px 10px 0px 0px;
+
+}
+
+.footer-img img{
+    display: block;
+    margin: auto;
+    height: 120px;
+    width: 250px;
+}
+
+.copyright{
+    color: #fff;
+    text-align: center;
+    margin-right: 300px;
+    font-size: 20px;
+    margin: 20px 0px 0px 500px;
+    float: left;
+}
+
+.footer-icon{
+    width: 408px;
+    height: 30px;
+    margin:20px auto 0px;
+}
+.footer-icon a{
+    color: white;
+    background-color: blue;
+    line-height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    display: inline-block;
+    width: 53px;
+    float: left;
+    height: 53px;
+    margin-left: 15px;
+}
+
+.footer-icon > a > i{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer p{
+    float: left;
+    margin: 23px 5px;
+    color: #fff;
+    text-align: center;
+}
